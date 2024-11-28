@@ -14,10 +14,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Ruta principal
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
-    console.log("Request served by ${testApp}")
+    console.log(`Request served by ${testApp}`)
 });
 
 // Iniciar el servidor
 app.listen(PORT, () => {
-    console.log(`Servidor escuchando en http://localhost:${PORT}`);
+    console.log(`${testApp} escuchando en http://localhost:${PORT}`);
 });
