@@ -4,50 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beautiful Landing Page</title>
+    <title>QAPacker - Aprende Pruebas de Software</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #f9f9f9;
             color: #333;
         }
+
         header {
             background: url('/images/career-quiz.png') no-repeat center center/cover;
             color: #fff;
             padding: 100px 0;
-            height: 150px;
             text-align: center;
         }
+
         header h1 {
             font-size: 3em;
             margin: 0;
         }
+
         header p {
             font-size: 1.2em;
+            margin-top: 10px;
         }
+
         nav {
-            background: #333;
+            background: #0066cc;
             color: #fff;
             display: flex;
             justify-content: space-around;
             padding: 15px 0;
         }
+
         nav a {
             color: #fff;
             text-decoration: none;
             font-weight: bold;
         }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
         .container {
             padding: 20px;
         }
+
         .grid {
             display: flex;
             gap: 20px;
             flex-wrap: wrap;
         }
+
         .card {
             background: #fff;
             border-radius: 8px;
@@ -56,12 +68,20 @@
             min-width: 280px;
             max-width: 300px;
             padding: 15px;
+            text-align: center;
         }
+
         .card img {
             border-radius: 8px;
             width: 100%;
             height: auto;
         }
+
+        .card h3 {
+            margin: 10px 0;
+            color: #0066cc;
+        }
+
         footer {
             background: #333;
             color: #fff;
@@ -69,42 +89,56 @@
             padding: 20px 0;
             margin-top: 20px;
         }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
     <header>
+        <h1>Bienvenido a QAPacker</h1>
+        <p>Aprende pruebas de software de manera interactiva y efectiva</p>
     </header>
+
     <nav>
-        <a href="#home">Home</a>
-        <a href="#about">Best Courses</a>
-        <a href="#services">Fun Tutorials</a>
-        <a href="#contact">About TechWorld with Nana</a>
+        <a href="#home">Inicio</a>
+        <a href="#courses">Cursos</a>
+        <a href="#tutorials">Tutoriales</a>
+        <a href="#about">Sobre Nosotros</a>
     </nav>
+
     <div class="container">
-        <h2>TechWorld with Nana Programs</h2>
+        <h2>Programas Destacados</h2>
         <div class="grid">
             <div class="card">
-                <img src="/images/career-quiz.png" alt="Service 1">
-                <h3>DevOps Bootcamp</h3>
-                <p>Finally learn with structured guided course, all DevOps tools together</p>
+                <img src="/images/career-quiz.png" alt="Automation Testing">
+                <h3>Bootcamp de Testing Automatizado</h3>
+                <p>Domina herramientas como Selenium, Cypress y Playwright para automatizar tus pruebas.</p>
             </div>
             <div class="card">
-                <img src="/images/it-beginners.png" alt="Service 2">
-                <h3>Software Development LifeCycle Course</h3>
-                <p>Learn the entire software Development lifecycle, from developing, to testing, to provisioning server and deploying</p>
+                <img src="/images/it-beginners.png" alt="Performance Testing">
+                <h3>Curso de Pruebas de Rendimiento</h3>
+                <p>Aprende a medir y optimizar el rendimiento de tus aplicaciones con herramientas avanzadas.</p>
             </div>
             <div class="card">
-                <img src="/images/devsecops.png" alt="Service 3">
-                <h3>DevSecOps Bootcamp</h3>
-                <p>If you wanna become a DevOps engineer on steroids, you can face this advanced bootcamp</p>
+                <img src="/images/devsecops.png" alt="DevSecOps">
+                <h3>Bootcamp de DevSecOps</h3>
+                <p>Integra seguridad en tus flujos de DevOps para proyectos más robustos y seguros.</p>
             </div>
         </div>
     </div>
+
     <footer>
-        <p>&copy; TechWorld with Nana. All Rights Reserved.</p>
-        <p>Follow us on:
-            <a href="#" style="color: #3b5998;">Linkedin</a> |
+        <p>&copy; 2024 QAPacker. Todos los derechos reservados.</p>
+        <p>Síguenos en:
+            <a href="#" style="color: #3b5998;">LinkedIn</a> |
             <a href="#" style="color: #00aced;">Twitter</a> |
             <a href="#" style="color: #e4405f;">Instagram</a>
         </p>
